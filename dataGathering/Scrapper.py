@@ -106,16 +106,6 @@ class Scrapper():
         # this is change in % since brought
         self.data[self.timeframepercent] = 0.0
         # see if the data is still active today
-        self.data["active"] = False
-        # done is a variable used to check if the 2w,1m... data has been filled in,
-        # in case the program was stopped half way
-        self.data["done"] = False
-        # this is used to filter out entries that have no good data about then, 
-        # such as trading before IPO or if stock no longer exist
-        self.data["skip"] = False
-        # the API source that this data is gotten from
-        self.data["source"] = ""
-        # filters out all the entries with no ticker
         self.data = self.data[self.data["Ticker"] != ""]
         self.data = self.data[self.data["Ticker"] != ".."]
         self.data = self.data[self.data["Ticker"] != "Na"]
@@ -129,12 +119,9 @@ class Scrapper():
             f"Removed adjcent tickers because same stock brought same day shouldnt be counted, total size is now {self.size()}"
         )
         time.sleep(1)
-        self.to_csv()
-        # adding the data to scrapped so that it will show up in the main menu
-        self.addToScrapped()
         # after scrapping data, fill in the stock price after timeframe(2m,1m,2m ...etc)
-        getter = DataGetter()
-        getter.update(self)
+
+        return self.data
 
     def size(self):
         return len(self.data)

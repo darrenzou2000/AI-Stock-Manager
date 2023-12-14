@@ -1,0 +1,16 @@
+Date-start,Date end,Category,Duration total,note
+9/4/2023,9/10/2023,Data Scrapping,18 hr,majority of this time is  waiting for the scrapping to be done
+9/11/2023,9/17/2023,Data Scrapping,12hr,
+9/18/2023,9/24/2023,Add price info,20hr,"was using YF finanace for most of it and ran into so many problems, then switched over to Polygon AI"
+9/25/2023,10/1/2023,data fixing,13hr,
+10/2/2023,10/8/2023,Deploy to SageMaker and Front end,10hr,"Since I used bubble professionally, building it out was pretty quick, sagemaker just needed the data to not have empty columns so that was easier to fix"
+10/9/2023,10/15/2023,Nothing,0,"Since I deployed, I just let it cook, plus I was doing accessibility update for my startup so i aint got time for this anyways"
+10/16/2023,10/22/2023,Nothing,0,
+10/23/2023,10/29/2023,Nothing,0,
+10/30/2023,11/5/2023,HELL,25hr,"WTF AWS sagemake costed 430 dollars over last month, oh hell nah, I gotta learn ML now. shoutout to freecodecamp"
+11/6/2023,11/12/2023,ML modeling,25hr,"there is a lot of ml models and no matter what I do to the data, the accuracy just wont go above 54%"
+11/13/2023,11/19/2023,deployment to AWS,10hr,"Deploying is honestly super easy, if you ignore all security and customization"
+11/20/2023,11/26/2023,connect front end to aws,2hr,it was super eazy
+11/27/2023,12/3/2023,check aws billing everyday,1hr,just leting the ML cook
+12/4/2023,12/10/2023,check aws billing everyday,1hr,just leting the ML cook
+12/10/2023,12/17/2023,front end,2hr,some final styling and feature touches to front end before final demo 
